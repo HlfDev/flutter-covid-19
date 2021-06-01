@@ -17,13 +17,13 @@ class StatusWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(4.0),
       child: Container(
         width: width,
         height: height,
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(25),
+          borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.15),
@@ -64,7 +64,7 @@ class StatusWidget extends StatelessWidget {
               title,
               style: TextStyle(
                 fontSize: 16,
-                color: Colors.grey[500],
+                color: Colors.grey[800],
               ),
             ),
           ],

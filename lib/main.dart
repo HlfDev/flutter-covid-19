@@ -6,7 +6,7 @@ import 'src/pages/home/home_page.dart';
 
 void main() {
   runApp(DevicePreview(
-    enabled: false,
+    enabled: true,
     builder: (context) => MaterialAppWidget(), // Wrap your app
   ));
 }

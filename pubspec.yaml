@@ -52,6 +52,7 @@ flutter:
     - assets/images/face_mask.png
     - assets/images/hand_cleaning.png
     - assets/images/social_distancing.png
+    - assets/images/heroes.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

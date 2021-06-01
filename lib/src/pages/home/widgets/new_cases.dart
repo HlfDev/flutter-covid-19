@@ -17,13 +17,13 @@ class NewCases extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(4.0),
       child: Container(
         width: width,
         height: height,
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(25),
+          borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.15),
@@ -38,22 +38,24 @@ class NewCases extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Icon(
                   Icons.add,
-                  size: 48,
+                  size: 30,
                   color: color,
                 ),
                 Text(
                   count,
                   style: TextStyle(
-                    fontSize: 48,
+                    fontSize: 38,
                     color: color,
                   ),
                 ),
                 Container(
-                  height: 75,
-                  width: 75,
+                  height: 50,
+                  width: 50,
                   child: Image.asset('assets/images/growth.png'),
                 )
               ],
@@ -62,7 +64,7 @@ class NewCases extends StatelessWidget {
               title,
               style: TextStyle(
                 fontSize: 20,
-                color: Colors.grey[500],
+                color: Colors.grey[800],
               ),
             ),
           ],

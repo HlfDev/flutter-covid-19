@@ -17,13 +17,13 @@ class NewsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(4.0),
       child: Container(
         width: width,
         height: height,
         decoration: BoxDecoration(
           color: color,
-          borderRadius: BorderRadius.circular(25),
+          borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.15),
@@ -45,7 +45,7 @@ class NewsWidget extends StatelessWidget {
             Text(
               title,
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 20,
                 color: Colors.white,
               ),
             ),

@@ -28,28 +28,29 @@ class _SplashPageState extends State<SplashPage>
       width: double.infinity,
       color: primaryColor,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
             'COVID-19',
-            style: TextStyle(
-                fontSize: 64,
-                fontWeight: FontWeight.bold,
-                color: Color(0xffE1ECFF)),
+            style: TextStyle(fontSize: 64, color: Color(0xffE1ECFF)),
           ),
-          AnimatedBuilder(
-            animation: _controller,
-            builder: (_, child) {
-              return Transform.rotate(
-                angle: _controller.value * 6.3,
-                child: child,
-              );
-            },
-            child: Container(
-              child: Image.asset('assets/images/virus.png'),
-            ),
-          ),
+          Stack(
+            children: [
+              AnimatedBuilder(
+                animation: _controller,
+                builder: (_, child) {
+                  return Transform.rotate(
+                    angle: _controller.value * 6.3,
+                    child: child,
+                  );
+                },
+                child: Container(
+                  child: Image.asset('assets/images/virus.png'),
+                ),
+              ),
+            ],
+          )
         ],
       ),
     )));
