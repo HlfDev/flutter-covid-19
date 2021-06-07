@@ -1,39 +1,39 @@
-import 'package:covid_19/src/pages/home/widgets/new_cases.dart';
-import 'package:covid_19/src/pages/home/widgets/news.dart';
-import 'package:covid_19/src/pages/home/widgets/status_widget.dart';
+import 'package:covid_19/app/core/core.dart';
+import 'package:covid_19/app/pages/home/widgets/status/status_item_widget.dart';
 import 'package:flutter/material.dart';
 
-class GroupStatusWidget extends StatelessWidget {
-  const GroupStatusWidget();
+class StatusWidget extends StatelessWidget {
+  const StatusWidget();
 
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         SizedBox(
-          height: 120,
+          height: 110,
         ),
         Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            StatusWidget(
+            StatusContainer(
               width: 105,
               height: 110,
-              color: Color(0xffFEC272),
+              color: AppColors.orange,
               count: '1046',
               title: 'infectados',
             ),
-            StatusWidget(
+            StatusContainer(
               width: 105,
               height: 110,
-              color: Color(0xffFF97C9),
+              color: AppColors.pink,
               count: '87',
               title: 'mortos',
             ),
-            StatusWidget(
+            StatusContainer(
               width: 105,
               height: 110,
-              color: Color(0xff99ADF9),
+              color: AppColors.blue,
               count: '1046',
               title: 'recuperados',
             ),
@@ -41,18 +41,19 @@ class GroupStatusWidget extends StatelessWidget {
         ),
         Row(
           children: [
-            NewCases(
+            StatusNewCases(
               width: 220,
               height: 110,
-              color: Color(0xff99ADF9),
+              color: AppColors.blue,
               count: '1046',
               title: 'novos casos',
+              pathImage: AppImages.chart,
             ),
-            NewsWidget(
+            StatusButtonNews(
               width: 105,
               height: 110,
-              color: Color(0xff99ADF9),
-              pathImage: 'assets/images/virus_news.png',
+              color: AppColors.blue,
+              pathImage: AppImages.virusNews,
               title: 'notícias',
             )
           ],

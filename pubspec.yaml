@@ -28,6 +28,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   device_preview: ^0.7.3
+  google_fonts: ^2.1.0
+  animated_splash_screen: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -48,7 +50,7 @@ flutter:
     - assets/images/splash.png
     - assets/images/virus.png
     - assets/images/virus_news.png
-    - assets/images/growth.png
+    - assets/images/chart.png
     - assets/images/face_mask.png
     - assets/images/hand_cleaning.png
     - assets/images/social_distancing.png
